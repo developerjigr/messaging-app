@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageTableViewCellSender" rowHeight="247" id="RIC-HS-xGZ" userLabel="messageTableViewCellSender" customClass="MessageTableViewCellSender" customModule="messaging_interface_demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="247"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RIC-HS-xGZ" id="CDb-E3-WXb">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="246.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nch-ci-Pco">
+                        <rect key="frame" x="8" y="0.0" width="330" height="246.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" verticalHuggingPriority="1000" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cf1-Sv-kol">
+                                <rect key="frame" x="8" y="4" width="252" height="238.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eBX-Qa-5mb">
+                                        <rect key="frame" x="4" y="0.0" width="240" height="238.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="240" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="UVP-PS-r7y" userLabel="MessageContainerView">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="206.5"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o7i-DR-Nrc">
+                                                        <rect key="frame" x="8" y="4" width="224" height="194.5"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                        </accessibility>
+                                                        <string key="text">this is a message sfsef sfss fsdf sf sf sf this is a message sfsef sfss fsdf sf sf sf this is a message sfsef sfss fsdf sf sf sf this is a message sfsef sfss fsdf sf sf sf this is a message sfsef sfss fsdf sf sf sf this is a message sfsef sfss fsdf sf sf sf </string>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="o7i-DR-Nrc" firstAttribute="leading" secondItem="UVP-PS-r7y" secondAttribute="leading" constant="8" id="TNJ-ud-17M"/>
+                                                    <constraint firstAttribute="bottom" secondItem="o7i-DR-Nrc" secondAttribute="bottom" constant="8" id="Wgl-4Q-S8x"/>
+                                                    <constraint firstAttribute="trailing" secondItem="o7i-DR-Nrc" secondAttribute="trailing" constant="8" id="Zlu-U8-uvr"/>
+                                                    <constraint firstItem="o7i-DR-Nrc" firstAttribute="top" secondItem="UVP-PS-r7y" secondAttribute="top" constant="4" id="rMe-Js-4CC"/>
+                                                </constraints>
+                                            </view>
+                                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="nHB-Fh-gPQ">
+                                                <rect key="frame" x="0.0" y="206.5" width="240" height="32"/>
+                                                <subviews>
+                                                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Read ddfvvdv" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYz-gF-eAF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="32"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="kYz-gF-eAF" firstAttribute="top" secondItem="nHB-Fh-gPQ" secondAttribute="top" id="T8d-4k-v6r"/>
+                                                    <constraint firstAttribute="trailing" secondItem="kYz-gF-eAF" secondAttribute="trailing" id="bjp-ic-PqC"/>
+                                                    <constraint firstItem="kYz-gF-eAF" firstAttribute="leading" secondItem="nHB-Fh-gPQ" secondAttribute="leading" id="sq8-bZ-YuP"/>
+                                                    <constraint firstAttribute="height" constant="32" id="tv5-2f-P9l"/>
+                                                    <constraint firstAttribute="bottom" secondItem="kYz-gF-eAF" secondAttribute="bottom" id="zP5-1p-bJT"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="UVP-PS-r7y" secondAttribute="trailing" id="0nj-pZ-5ve"/>
+                                            <constraint firstItem="UVP-PS-r7y" firstAttribute="leading" secondItem="eBX-Qa-5mb" secondAttribute="leading" id="AyI-iT-nQZ"/>
+                                            <constraint firstItem="nHB-Fh-gPQ" firstAttribute="leading" secondItem="eBX-Qa-5mb" secondAttribute="leading" id="JWV-jk-aym"/>
+                                            <constraint firstItem="nHB-Fh-gPQ" firstAttribute="top" secondItem="UVP-PS-r7y" secondAttribute="bottom" id="Pxk-0X-pC4"/>
+                                            <constraint firstItem="UVP-PS-r7y" firstAttribute="top" secondItem="eBX-Qa-5mb" secondAttribute="top" id="Ysj-X8-qDN"/>
+                                            <constraint firstAttribute="trailing" secondItem="nHB-Fh-gPQ" secondAttribute="trailing" id="ZdC-x9-2lb"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eBX-Qa-5mb" firstAttribute="leading" secondItem="Cf1-Sv-kol" secondAttribute="leading" constant="4" id="7DN-Ff-9kW"/>
+                                    <constraint firstAttribute="bottom" secondItem="eBX-Qa-5mb" secondAttribute="bottom" id="7KY-dr-ijd"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eBX-Qa-5mb" secondAttribute="trailing" priority="998" id="Dvn-EJ-JI0"/>
+                                    <constraint firstItem="eBX-Qa-5mb" firstAttribute="top" secondItem="Cf1-Sv-kol" secondAttribute="top" id="YEV-q5-eid"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Cf1-Sv-kol" firstAttribute="leading" secondItem="nch-ci-Pco" secondAttribute="leading" constant="8" id="BkE-c0-mRV"/>
+                            <constraint firstAttribute="bottom" secondItem="Cf1-Sv-kol" secondAttribute="bottom" constant="4" id="MFa-qL-IpG"/>
+                            <constraint firstItem="Cf1-Sv-kol" firstAttribute="top" secondItem="nch-ci-Pco" secondAttribute="top" constant="4" id="jPV-ZA-WEp"/>
+                            <constraint firstAttribute="trailing" secondItem="Cf1-Sv-kol" secondAttribute="trailing" constant="70" id="tho-92-D7J"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="nch-ci-Pco" secondAttribute="bottom" id="1ey-oK-H6z"/>
+                    <constraint firstItem="nch-ci-Pco" firstAttribute="top" secondItem="CDb-E3-WXb" secondAttribute="top" id="MDt-X2-l4k"/>
+                    <constraint firstAttribute="trailing" secondItem="nch-ci-Pco" secondAttribute="trailing" constant="8" id="akT-P5-1N4"/>
+                    <constraint firstItem="nch-ci-Pco" firstAttribute="leading" secondItem="CDb-E3-WXb" secondAttribute="leading" constant="8" id="nf0-Em-tmG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="Cf1-Sv-kol" id="Qcf-If-UEc"/>
+                <outlet property="messageContainerView" destination="UVP-PS-r7y" id="XDy-wv-0BV"/>
+                <outlet property="messageContent" destination="o7i-DR-Nrc" id="xoC-SS-bST"/>
+                <outlet property="messageStatusContainerView" destination="nHB-Fh-gPQ" id="3RM-ub-CRv"/>
+                <outlet property="messageStatusLabel" destination="kYz-gF-eAF" id="t5f-r8-4oE"/>
+                <outlet property="stackView" destination="eBX-Qa-5mb" id="cAP-3I-4QR"/>
+            </connections>
+            <point key="canvasLocation" x="-563.20000000000005" y="-789.35532233883066"/>
+        </tableViewCell>
+    </objects>
+</document>

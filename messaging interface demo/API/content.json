@@ -1,0 +1,210 @@
+{
+  "conversations": [
+    {
+      "startedBy": {
+        "firstName": "Mock",
+        "lastName": "Sender",
+        "userImageURL": "https://image.shutterstock.com/image-vector/man-avatar-profile-picture-vector-260nw-229692004.jpg"
+      },
+      "receivedBy": {
+        "firstName": "Mock",
+        "lastName": "Recevier",
+        "userImageURL": "https://image.shutterstock.com/image-vector/man-avatar-profile-picture-vector-260nw-229692004.jpg"
+      },
+      "startDate": "10/01/2019:14:12:02",
+      "messageGroups": [
+        {
+          "group": "27/01/2019:15:15",
+          "messages": [
+            {
+              "receivedDate": "27/01/2019:14:15:30",
+              "sentDate": "10/01/2019:14:12:29",
+              "messageSender": {
+                "firstName": "Mock",
+                "lastName": "Recevier",
+                "userImageURL": "https://image.shutterstock.com/image-vector/man-avatar-profile-picture-vector-260nw-229692004.jpg"
+              },
+              "messageType": "text",
+              "messageBody": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "messageStatus": "sent"
+            }
+          ]
+        },
+        {
+          "group": "27/01/2019:14:15",
+          "messages": [
+            {
+              "receivedDate": "09/01/2019:14:15:24",
+              "sentDate": "10/01/2019:14:12:23",
+              "messageSender": {
+                "firstName": "Mock",
+                "lastName": "Sender",
+                "userImageURL": "https://image.shutterstock.com/image-vector/man-avatar-profile-picture-vector-260nw-229692004.jpg"
+              },
+              "messageType": "text",
+              "messageBody": "This is a test sender message.",
+              "messageStatus": "sent"
+            },
+            {
+              "receivedDate": "09/01/2019:14:15:30",
+              "sentDate": "10/01/2019:14:12:29",
+              "messageSender": {
+                "firstName": "Mock",
+                "lastName": "Recevier",
+                "userImageURL": "https://image.shutterstock.com/image-vector/man-avatar-profile-picture-vector-260nw-229692004.jpg"
+              },
+              "messageType": "text",
+              "messageBody": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "messageStatus": "sent"
+            }
+          ]
+        },
+        {
+          "group": "15/01/2019:19:15",
+          "messages": [
+            {
+              "receivedDate": "15/01/2019:14:15:24",
+              "sentDate": "10/01/2019:14:12:23",
+              "messageSender": {
+                "firstName": "Mock",
+                "lastName": "Sender",
+                "userImageURL": "https://image.shutterstock.com/image-vector/man-avatar-profile-picture-vector-260nw-229692004.jpg"
+              },
+              "messageType": "text",
+              "messageBody": "This is a test sender message to test out of order data in the json",
+              "messageStatus": "sent"
+            }
+          ]
+        },
+        {
+          "group": "10/01/2019:14:15",
+          "messages": [
+            {
+              "receivedDate": "10/01/2019:14:15:24",
+              "sentDate": "10/01/2019:14:12:23",
+              "messageSender": {
+                "firstName": "Mock",
+                "lastName": "Sender",
+                "userImageURL": "https://image.shutterstock.com/image-vector/man-avatar-profile-picture-vector-260nw-229692004.jpg"
+              },
+              "messageType": "text",
+              "messageBody": "This is a test sender message.",
+              "messageStatus": "sent"
+            },
+            {
+              "receivedDate": "10/01/2019:14:15:30",
+              "sentDate": "10/01/2019:14:12:29",
+              "messageSender": {
+                "firstName": "Mock",
+                "lastName": "Recevier",
+                "userImageURL": "https://image.shutterstock.com/image-vector/man-avatar-profile-picture-vector-260nw-229692004.jpg"
+              },
+              "messageType": "text",
+              "messageBody": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "messageStatus": "sent"
+            },
+            {
+              "receivedDate": "10/01/2019:14:11:24",
+              "sentDate": "10/01/2019:14:11:23",
+              "messageSender": {
+                "firstName": "Mock",
+                "lastName": "Sender",
+                "userImageURL": "https://image.shutterstock.com/image-vector/man-avatar-profile-picture-vector-260nw-229692004.jpg"
+              },
+              "messageType": "text",
+              "messageBody": "This is an out of order message. Should show first sender message.",
+              "messageStatus": "sent"
+            },
+            {
+              "receivedDate": "10/01/2019:14:16:32",
+              "sentDate": "10/01/2019:14:16:32",
+              "messageSender": {
+                "firstName": "Mock",
+                "lastName": "Recevier",
+                "userImageURL": "https://image.shutterstock.com/image-vector/man-avatar-profile-picture-vector-260nw-229692004.jpg"
+              },
+              "messageType": "text",
+              "messageBody": "mod temporor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "messageStatus": "sent"
+            },
+            {
+              "receivedDate": "10/01/2019:14:16:56",
+              "sentDate": "10/01/2019:14:16:55",
+              "messageSender": {
+                "firstName": "Mock",
+                "lastName": "Sender",
+                "userImageURL": "https://image.shutterstock.com/image-vector/man-avatar-profile-picture-vector-260nw-229692004.jpg"
+              },
+              "messageType": "text",
+              "messageBody": "I didn't know you spoke indian?",
+              "messageStatus": "sent"
+            },
+            {
+              "receivedDate": "10/01/2019:14:17:56",
+              "sentDate": "16/09/2019:15:16:55",
+              "messageSender": {
+                "firstName": "Mock",
+                "lastName": "Recevier",
+                "userImageURL": "https://image.shutterstock.com/image-vector/man-avatar-profile-picture-vector-260nw-229692004.jpg"
+              },
+              "messageType": "text",
+              "messageBody": "I'm blocking you.",
+              "messageStatus": "sent"
+            }
+          ]
+        },
+        {
+          "group": "16/09/2019:14:15",
+          "messages": [
+            {
+              "receivedDate": "16/09/2019:15:19:56",
+              "sentDate": "16/09/2019:15:16:55",
+              "messageSender": {
+                "firstName": "Mock",
+                "lastName": "Sender",
+                "userImageURL": "https://image.shutterstock.com/image-vector/man-avatar-profile-picture-vector-260nw-229692004.jpg"
+              },
+              "messageType": "text",
+              "messageBody": "No.",
+              "messageStatus": "sent"
+            }
+          ]
+        },
+        {
+          "group": "15/01/2019:10:15",
+          "messages": [
+            {
+              "receivedDate": "17/09/2019:15:19:56",
+              "sentDate": "16/09/2019:15:16:55",
+              "messageSender": {
+                "firstName": "Mock",
+                "lastName": "Recevier",
+                "userImageURL": "https://image.shutterstock.com/image-vector/man-avatar-profile-picture-vector-260nw-229692004.jpg"
+              },
+              "messageType": "text",
+              "messageBody": "I thought you liked funny guys?",
+              "messageStatus": "sent"
+            }
+          ]
+        },
+        {
+          "group": "20/09/2019:10:15",
+          "messages": [
+            {
+              "receivedDate": "20/09/2019:10:15:56",
+              "sentDate": "20/09/2019:10:15:55",
+              "messageSender": {
+                "firstName": "Mock",
+                "lastName": "Recevier",
+                "userImageURL": "https://image.shutterstock.com/image-vector/man-avatar-profile-picture-vector-260nw-229692004.jpg"
+              },
+              "messageType": "text",
+              "messageBody": "I thought you liked funny guys?",
+              "messageStatus": "sent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

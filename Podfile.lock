@@ -1,0 +1,16 @@
+PODS:
+  - InputBarAccessoryView (4.2.2)
+
+DEPENDENCIES:
+  - InputBarAccessoryView (= 4.2.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - InputBarAccessoryView
+
+SPEC CHECKSUMS:
+  InputBarAccessoryView: 2b937602598e2fab3149f37f51dd7ad795653812
+
+PODFILE CHECKSUM: e01fa9c1357ea144d84eb93ff14c30bbfd6d79f8
+
+COCOAPODS: 1.7.5

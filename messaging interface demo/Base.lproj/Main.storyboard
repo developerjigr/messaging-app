@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yvn-t2-iwA">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="AAo-kU-EhR">
+            <objects>
+                <navigationController id="yvn-t2-iwA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FtH-i1-9bU">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Tkg-7q-uyp" kind="relationship" relationship="rootViewController" id="XHT-Cy-fmy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZKJ-7q-Zhv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1569" y="35"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3Wk-Wa-2B2">
+            <objects>
+                <viewController id="C8p-A7-3Iw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y0I-sb-58V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pkS-Jc-FzJ">
+                                <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Conversations" id="LtB-QI-4q6"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iwu-Vu-PTl">
+                                <rect key="frame" x="0.0" y="140" width="375" height="638"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pkS-Jc-FzJ" firstAttribute="leading" secondItem="buC-3b-Ul5" secondAttribute="leading" id="2jD-ID-J84"/>
+                            <constraint firstItem="buC-3b-Ul5" firstAttribute="trailing" secondItem="iwu-Vu-PTl" secondAttribute="trailing" id="D9f-9G-37S"/>
+                            <constraint firstItem="iwu-Vu-PTl" firstAttribute="top" secondItem="pkS-Jc-FzJ" secondAttribute="bottom" id="HFj-jb-Gfg"/>
+                            <constraint firstItem="pkS-Jc-FzJ" firstAttribute="top" secondItem="buC-3b-Ul5" secondAttribute="top" id="PZB-OU-5mu"/>
+                            <constraint firstAttribute="trailing" secondItem="pkS-Jc-FzJ" secondAttribute="trailing" id="VdI-09-dzq"/>
+                            <constraint firstItem="buC-3b-Ul5" firstAttribute="bottom" secondItem="iwu-Vu-PTl" secondAttribute="bottom" id="iLJ-jU-o4e"/>
+                            <constraint firstItem="iwu-Vu-PTl" firstAttribute="leading" secondItem="buC-3b-Ul5" secondAttribute="leading" id="wbu-gk-Fvy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="buC-3b-Ul5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qyM-Z1-4nq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHP-Mb-yYW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="21"/>
+        </scene>
+        <!--Convo-->
+        <scene sceneID="5zB-ca-xRr">
+            <objects>
+                <viewController id="Tkg-7q-uyp" customClass="ConversationViewController" customModule="messaging_interface_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zj7-R2-BNZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="gwR-Ys-Etd">
+                                <rect key="frame" x="0.0" y="88" width="375" height="597"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gwR-Ys-Etd" firstAttribute="leading" secondItem="FVs-3t-1cB" secondAttribute="leading" id="8mI-8b-NQr"/>
+                            <constraint firstItem="FVs-3t-1cB" firstAttribute="trailing" secondItem="gwR-Ys-Etd" secondAttribute="trailing" id="hJn-HQ-OiY"/>
+                            <constraint firstItem="FVs-3t-1cB" firstAttribute="bottom" secondItem="gwR-Ys-Etd" secondAttribute="bottom" constant="44" id="lr9-Uu-uDE"/>
+                            <constraint firstItem="gwR-Ys-Etd" firstAttribute="top" secondItem="FVs-3t-1cB" secondAttribute="top" id="r5I-He-iwp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FVs-3t-1cB"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Convo" id="RPi-Pe-HEM">
+                        <barButtonItem key="leftBarButtonItem" image="back_button" width="44" id="2CJ-w5-vrK">
+                            <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-4"/>
+                            <color key="tintColor" red="0.98431372549019602" green="0.25098039215686274" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="Frame-1" width="44" id="2wQ-Hm-MSf">
+                            <color key="tintColor" red="0.98431372549019602" green="0.25098039215686274" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="messageTableView" destination="gwR-Ys-Etd" id="ZrP-2R-iqe"/>
+                        <outlet property="rightBarItem" destination="2wQ-Hm-MSf" id="qHE-cT-SPb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QcP-yp-CPU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-628" y="35"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Frame-1" width="44" height="44"/>
+        <image name="back_button" width="44" height="44"/>
+    </resources>
+</document>
