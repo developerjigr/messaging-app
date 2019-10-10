@@ -44,6 +44,7 @@
 		016BB574233CEFB000072290 /* MessageTableViewCellSender.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016BB573233CEFB000072290 /* MessageTableViewCellSender.xib */; };
 		016BB576233CF03400072290 /* MessageTableViewCellSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016BB575233CF03400072290 /* MessageTableViewCellSender.swift */; };
 		016BB578233CF0A100072290 /* MessageViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016BB577233CF0A100072290 /* MessageViewTableCell.swift */; };
+		016BB584233D3AC100072290 /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016BB583233D3AC100072290 /* ConversationListViewController.swift */; };
 		37B95D84D8F8FC5AD535A9ED /* Pods_messaging_interface_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908773808EE5F924464F8852 /* Pods_messaging_interface_demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		016BB573233CEFB000072290 /* MessageTableViewCellSender.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCellSender.xib; sourceTree = "<group>"; };
 		016BB575233CF03400072290 /* MessageTableViewCellSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCellSender.swift; sourceTree = "<group>"; };
 		016BB577233CF0A100072290 /* MessageViewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewTableCell.swift; sourceTree = "<group>"; };
+		016BB583233D3AC100072290 /* ConversationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListViewController.swift; sourceTree = "<group>"; };
 		908773808EE5F924464F8852 /* Pods_messaging_interface_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_messaging_interface_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9594913604DD14A759DDF66F /* Pods-messaging interface demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-messaging interface demo.debug.xcconfig"; path = "Target Support Files/Pods-messaging interface demo/Pods-messaging interface demo.debug.xcconfig"; sourceTree = "<group>"; };
 		C98493EDC4AE8B563191F9BC /* Pods-messaging interface demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-messaging interface demo.release.xcconfig"; path = "Target Support Files/Pods-messaging interface demo/Pods-messaging interface demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -186,15 +188,10 @@
 		0136EF0F232D23A900A4149C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				016BB57C233D36D900072290 /* Conversations */,
-				0136EF24232D273C00A4149C /* MessageTableViewCellReceiver.xib */,
-				0136EF26232D274B00A4149C /* MessageTableViewCellReceiver.swift */,
-				0136EF46232E5EF100A4149C /* MessageNavBarTitleView.xib */,
-				0136EF48232E5FC200A4149C /* MessageNavBarTitleView.swift */,
-				0168C91823316AE400F433C3 /* TextInputView.swift */,
-				016BB573233CEFB000072290 /* MessageTableViewCellSender.xib */,
-				016BB575233CF03400072290 /* MessageTableViewCellSender.swift */,
-				016BB577233CF0A100072290 /* MessageViewTableCell.swift */,
+				016BB582233D3A9800072290 /* Input Bar */,
+				016BB581233D3A7100072290 /* Message */,
+				016BB57D233D36E400072290 /* Conversation */,
+				016BB57C233D36D900072290 /* Conversation List */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,10 +207,10 @@
 		0136EF18232D264500A4149C /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				016BB57B233D36CB00072290 /* Conversations */,
-				0136EF2A232D2AF000A4149C /* MessageViewModel.swift */,
-				0136EF34232D2CE200A4149C /* UserViewModel.swift */,
-				0136EF4A232E635300A4149C /* ConversationViewModel.swift */,
+				016BB587233D3B0E00072290 /* User */,
+				016BB586233D3AEF00072290 /* Message */,
+				016BB585233D3AE800072290 /* Conversation */,
+				016BB57B233D36CB00072290 /* Conversation List */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -266,27 +263,26 @@
 			path = Conversations;
 			sourceTree = "<group>";
 		};
-		016BB57B233D36CB00072290 /* Conversations */ = {
+		016BB57B233D36CB00072290 /* Conversation List */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Conversations;
+			path = "Conversation List";
 			sourceTree = "<group>";
 		};
-		016BB57C233D36D900072290 /* Conversations */ = {
+		016BB57C233D36D900072290 /* Conversation List */ = {
 			isa = PBXGroup;
 			children = (
-				016BB57D233D36E400072290 /* Conversation List */,
 			);
-			path = Conversations;
+			path = "Conversation List";
 			sourceTree = "<group>";
 		};
-		016BB57D233D36E400072290 /* Conversation List */ = {
+		016BB57D233D36E400072290 /* Conversation */ = {
 			isa = PBXGroup;
 			children = (
 				016BB57E233D36F100072290 /* Conversation */,
 			);
-			path = "Conversation List";
+			path = Conversation;
 			sourceTree = "<group>";
 		};
 		016BB57E233D36F100072290 /* Conversation */ = {
@@ -307,8 +303,55 @@
 		016BB580233D372800072290 /* Conversation List */ = {
 			isa = PBXGroup;
 			children = (
+				016BB583233D3AC100072290 /* ConversationListViewController.swift */,
 			);
 			path = "Conversation List";
+			sourceTree = "<group>";
+		};
+		016BB581233D3A7100072290 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				0136EF24232D273C00A4149C /* MessageTableViewCellReceiver.xib */,
+				0136EF26232D274B00A4149C /* MessageTableViewCellReceiver.swift */,
+				016BB573233CEFB000072290 /* MessageTableViewCellSender.xib */,
+				016BB575233CF03400072290 /* MessageTableViewCellSender.swift */,
+				016BB577233CF0A100072290 /* MessageViewTableCell.swift */,
+				0136EF46232E5EF100A4149C /* MessageNavBarTitleView.xib */,
+				0136EF48232E5FC200A4149C /* MessageNavBarTitleView.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		016BB582233D3A9800072290 /* Input Bar */ = {
+			isa = PBXGroup;
+			children = (
+				0168C91823316AE400F433C3 /* TextInputView.swift */,
+			);
+			path = "Input Bar";
+			sourceTree = "<group>";
+		};
+		016BB585233D3AE800072290 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				0136EF4A232E635300A4149C /* ConversationViewModel.swift */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		016BB586233D3AEF00072290 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				0136EF2A232D2AF000A4149C /* MessageViewModel.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		016BB587233D3B0E00072290 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				0136EF34232D2CE200A4149C /* UserViewModel.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		79C04999EF1688C861679104 /* Pods */ = {
@@ -450,6 +493,7 @@
 				0136EF4F232E668C00A4149C /* APIManager.swift in Sources */,
 				0136EF31232D2B6500A4149C /* ViewDataConfigureable.swift in Sources */,
 				0168C91923316AE400F433C3 /* TextInputView.swift in Sources */,
+				016BB584233D3AC100072290 /* ConversationListViewController.swift in Sources */,
 				0136EEFC232D22F300A4149C /* ConversationViewController.swift in Sources */,
 				0136EF17232D242C00A4149C /* ConversationModel.swift in Sources */,
 				0136EF33232D2C7700A4149C /* MessageList.swift in Sources */,

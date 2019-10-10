@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-1569" y="35"/>
         </scene>
-        <!--View Controller-->
+        <!--Conversation List View Controller-->
         <scene sceneID="3Wk-Wa-2B2">
             <objects>
-                <viewController id="C8p-A7-3Iw" sceneMemberID="viewController">
+                <viewController id="C8p-A7-3Iw" customClass="ConversationListViewController" customModule="messaging_interface_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y0I-sb-58V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,6 +61,9 @@
                         <viewLayoutGuide key="safeArea" id="buC-3b-Ul5"/>
                     </view>
                     <navigationItem key="navigationItem" id="qyM-Z1-4nq"/>
+                    <connections>
+                        <outlet property="conversationListTableView" destination="iwu-Vu-PTl" id="2pY-OM-G5l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tHP-Mb-yYW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
